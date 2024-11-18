@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 100vh;
+      border: 1px solid black;
+    }
+
+    /* Image Section */
+    .left {
+      background: url('obituary.jpg') no-repeat center center/cover;
+      height: 100vh; /* Takes up 50% of the screen height on mobile */
+    }
+
+    .right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px;
+      gap: 20px;
+      background: rgb(39, 20, 20);
+    }
+
+    .message h1 {
+      text-align: center;
+      font-size: 30px;
+      color: white;
+    }
+
+    .uk-account, .nigeria-acc, .paypal {
+      width: 100%;
+      text-align: center;
+      color: white;
+      padding-top: 30px;
+      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.8);
+    }
+
+    .uk-account h2 {
+      color: Blue;
+    }
+
+    .nigeria-acc h2 {
+      color: green;
+    }
+
+    .paypal h2 {
+      color: aqua;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr; /* Stack everything vertically */
+        grid-template-rows: auto 1fr; /* First row for the image, second for content */
+      }
+
+      /* Adjust Image for Mobile */
+      .left {
+        height: 50vh; /* Take up half of the screen height on mobile */
+      }
+
+      /* Adjust the layout of the right section */
+      .right {
+        padding: 20px;
+        gap: 15px;
+      }
+
+      /* Adjust font sizes for better readability */
+      .message h1 {
+        font-size: 1.5rem;
+        padding-top: 20px;
+      }
+
+      .uk-account, .nigeria-acc, .paypal {
+        font-size: 0.9rem;
+        padding-top: 20px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Image Section -->
+  <div class="left">Image</div>
+
+  <!-- Content Section -->
+  <div class="right">
+    <div class="message">
+      <h1>Thank you for your thoughtfulness, generosity, and support at this difficult time. Much Appreciated</h1>
+    </div>
+
+    <div class="uk-account">
+      <h2>UK BANK</h2>
+      <P>Name: Mrs F. O. Mogaji</P>
+      <p>Bank: Santander Bank</p>
+      <p>Sort Code: 09-01-26</p>
+      <p>Account No.: 80867305</p>
+    </div>
+
+    <div class="nigeria-acc">
+      <h2>NIGERIA BANK</h2>
+      <P>Name: Isaac Tolu and Foluke O. Mogaji</P>
+      <p>Bank: UBA BANK PLC</p>
+      <p>Account Number: 10052880055</p>
+    </div>
+
+    <div class="paypal">
+      <h2>Paypal Account</h2>
+      <h3>lukemogaji@hotmail.co.uk</h3>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
